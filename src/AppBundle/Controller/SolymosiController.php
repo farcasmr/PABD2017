@@ -4,18 +4,20 @@ namespace AppBundle\Controller;
 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
-
-class SolymosiController
+class SolymosiController extends Controller
 {
     /**
      * @Route("/solymosi/")
      */
-	public function main()
-	{ 	
-	 	return new Response(
-            	"<html><body><title>Solymosi Robert</title><h1> Welcome to my page(Solymosi Robert) </h1> <br> Enjoy the content page</body></html>"
-		);
-	}
+ 	public function main()
+    	{
+        	$number = mt_rand(0, 100);
+
+	        return $this->render('solymosi.html.twig', array(
+	            'number' => $number,
+        	));
+    	}
 }
 ?>
