@@ -12,12 +12,8 @@ class SolymosiController extends Controller
      * @Route("/solymosi/")
      */
  	public function main()
-    	{
-        	$number = mt_rand(0, 100);
-
-	        return $this->render('solymosi.html.twig', array(
-	            'number' => $number,
-        	));
+    	{       	
+	        return $this->render('solymosi/solymosi.html.twig');
     	}
 }
 ?>
