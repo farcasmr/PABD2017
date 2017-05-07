@@ -1,0 +1,3 @@
+uab_florin_homepage:
+    path: /
+    defaults: { _controller: UabFlorinBundle:Default:index }

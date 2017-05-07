@@ -1,3 +1,7 @@
+uab_florin:
+    resource: "@UabFlorinBundle/Resources/config/routing.yml"
+    prefix:   /florin
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
