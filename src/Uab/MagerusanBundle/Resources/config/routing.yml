@@ -1,0 +1,3 @@
+uab_magerusan_homepage:
+    path: /
+    defaults: { _controller: UabMagerusanBundle:Default:index }
