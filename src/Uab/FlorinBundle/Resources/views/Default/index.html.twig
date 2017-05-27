@@ -1,29 +1,37 @@
 {% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('bundles/uabflorin/web/css/florin.css') }}" />
+{% endblock %}
 {% block body %}
   <h1>{{title}}</h1>
 
   <div class="container">
     <div class="row">
-      <h3 style="display:inline-block">General info</h3>
-      <button class="glyphicon glyphicon-collapse-down" data-toggle="collapse" data-target="#info"></button>
-    </div>
-    <div id="info" class="collapse in">
-      <div class="row">
-        <label>Universitate:</label>
-        <span>Universitatea "1 Decembrie 1918" Alba Iulia</span>
+      <div class="col-xs-6">
+        <img src="{{asset('bundles/uabflorin/web/images/profile.jpg')}}" class="img-fluid img-rounded" width="304" height="236" alt="Responsive image">
       </div>
-      <div class="row">
-        <label>Facultate:</label>
-        <span>Stiinte Exacte si Ingineresti</span>
+      <div class="col-xs-6">
+        <h3 style="display:inline-block">General info</h3>
+        <button id="generalInfoBtn" class="glyphicon glyphicon-collapse-up" data-toggle="collapse" data-target="#info"></button>
+        <div id="info" class="collapse in">
+          <div class="row">
+            <label>Universitate:</label>
+            <span>Universitatea "1 Decembrie 1918" Alba Iulia</span>
+          </div>
+          <div class="row">
+            <label>Facultate:</label>
+            <span>Stiinte Exacte si Ingineresti</span>
+          </div>
+          <div class="row">
+            <label>Specializare:</label>
+            <span>Programare Avansata si Baze de Date</span>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <label>Specializare:</label>
-        <span>Programare Avansata si Baze de Date</span>
-      </div>
-    </div>
-  </div>
+    </div></div>
 {% endblock %}
 {% block javascripts %}
   <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{ asset('bundles/uabflorin/web/js/florin.js') }}"></script>
 {% endblock %}
