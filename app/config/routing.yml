@@ -2,6 +2,10 @@ uab_florin:
     resource: "@UabFlorinBundle/Resources/config/routing.yml"
     prefix:   /florin
 
+uab_magerusan:
+    resource: "@UabMagerusanBundle/Resources/config/routing.yml"
+    prefix:   /magerusan
+
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
