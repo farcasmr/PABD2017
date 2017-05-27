@@ -1,7 +1,7 @@
 {% extends 'base.html.twig' %}
 
 {% block stylesheets %}
-  <link rel="stylesheet" href="{{asset('css/magerusan_style.css')}}">
+  <link rel="stylesheet" href="{{asset('bundles/uabmagerusan/web/css/magerusan_style.css')}}">
   <link rel="stylesheet" href="{{asset('//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')}}">
 {% endblock %}
 
@@ -10,7 +10,7 @@
   <div class="container">
     <h1>{{firstName}} {{lastName}}</h1>
 
-    <img id="profilPhoto" src="/images/magerusan_profil_photo.jpg">
+    <img id="profilPhoto" src="/bundles/uabmagerusan/web/images/magerusan_profil_photo.jpg">
 
     <div id="accordion">
 
@@ -22,7 +22,7 @@
 
       <h3>Specializare</h3>
       <div>{{specialization}}</div>
-      
+
       <h3>Varsta</h3>
       <div>{{age}}</div>
 
@@ -35,5 +35,5 @@
 {% block javascripts %}
   <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
   <script src="{{ asset('https://code.jquery.com/ui/1.12.1/jquery-ui.js') }}"></script>
-  <script src="{{ asset('js/magerusan_js.js') }}"></script>
+  <script src="{{ asset('bundles/uabmagerusan/web/js/magerusan_js.js') }}"></script>
 {% endblock %}
