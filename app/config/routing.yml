@@ -9,3 +9,8 @@ uab_magerusan:
 app:
     resource: "@AppBundle/Controller/"
     type:     annotation
+
+uab_marius:
+    resource: "@UabBreazBundle/Resources/config/routing.yml"
+    prefix:   /marius
+

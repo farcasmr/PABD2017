@@ -1,0 +1,4 @@
+services:
+#    uab_marius.example:
+#        class: Uab\BreazBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

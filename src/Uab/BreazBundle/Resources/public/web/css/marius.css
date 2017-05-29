@@ -1,0 +1,24 @@
+#profil {
+  width: 300px;
+  height: 300px;
+  float: left;
+
+}
+
+#info {
+  width: 400px;
+
+  float: left;
+    color: #2F4F4F;
+    padding: 10px;
+}
+#buton{
+  padding: 5px;
+   float: left;
+   border: 1px solid green;
+ }
+ #fb{
+  width: 400px;
+    float: right;
+    padding: 10px;
+  }
