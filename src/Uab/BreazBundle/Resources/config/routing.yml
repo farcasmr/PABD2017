@@ -1,0 +1,3 @@
+uab_marius_homepage:
+    path: /
+    defaults: { _controller: UabBreazBundle:Default:index }
