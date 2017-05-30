@@ -1,0 +1,3 @@
+uab_solymosi_homepage:
+    path: /
+    defaults: { _controller: UabSolymosiBundle:Default:index }

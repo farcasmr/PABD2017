@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 class SolymosiController extends Controller
 {
     /**
-     * @Route("/solymosi/")
+     * @Route("/oldsolymosi/")
      */
  	public function main()
     	{       	

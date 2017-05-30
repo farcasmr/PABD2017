@@ -14,3 +14,6 @@ uab_marius:
     resource: "@UabBreazBundle/Resources/config/routing.yml"
     prefix:   /marius
 
+uab_solymosi:
+    resource: "@UabSolymosiBundle/Resources/config/routing.yml"
+    prefix:   /solymosi

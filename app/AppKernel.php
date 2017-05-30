@@ -18,7 +18,8 @@ class AppKernel extends Kernel
             new AppBundle\AppBundle(),
             new Uab\FlorinBundle\UabFlorinBundle(),
             new Uab\MagerusanBundle\UabMagerusanBundle(),
-          new Uab\BreazBundle\UabBreazBundle(),
+            new Uab\SolymosiBundle\UabSolymosiBundle(),
+          	new Uab\BreazBundle\UabBreazBundle()
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

@@ -1,0 +1,4 @@
+services:
+#    uab_solymosi.example:
+#        class: Uab\SolymosiBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
