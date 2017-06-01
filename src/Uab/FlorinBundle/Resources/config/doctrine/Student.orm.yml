@@ -1,0 +1,32 @@
+Uab\FlorinBundle\Entity\Student:
+    type: entity
+    table: null
+    repositoryClass: Uab\FlorinBundle\Repository\StudentRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nume:
+            type: string
+            length: 255
+        prenume:
+            type: string
+            length: 255
+        dataNasterii:
+            type: date
+            nullable: true
+        specializare:
+            type: string
+            length: 255
+            nullable: true
+    manyToOne:
+        universitate:
+            targetEntity: Universitate
+            inversedBy: studenti
+            joinColumn:
+                name: universitate_id
+                referencedColumnName: id
+    lifecycleCallbacks: {  }

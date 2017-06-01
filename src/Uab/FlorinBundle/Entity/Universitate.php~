@@ -1,0 +1,90 @@
+<?php
+
+namespace Uab\FlorinBundle\Entity;
+
+/**
+ * Universitate
+ */
+class Universitate
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var string
+     */
+    private $nume;
+
+    /**
+     * @var string
+     */
+    private $localitate;
+
+    private $studenti;
+
+    public function __construct()
+    {
+        $this->studenti = new ArrayCollection();
+    }
+
+
+    /**
+     * Get id
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set nume
+     *
+     * @param string $nume
+     *
+     * @return Universitate
+     */
+    public function setNume($nume)
+    {
+        $this->nume = $nume;
+
+        return $this;
+    }
+
+    /**
+     * Get nume
+     *
+     * @return string
+     */
+    public function getNume()
+    {
+        return $this->nume;
+    }
+
+    /**
+     * Set localitate
+     *
+     * @param string $localitate
+     *
+     * @return Universitate
+     */
+    public function setLocalitate($localitate)
+    {
+        $this->localitate = $localitate;
+
+        return $this;
+    }
+
+    /**
+     * Get localitate
+     *
+     * @return string
+     */
+    public function getLocalitate()
+    {
+        return $this->localitate;
+    }
+}

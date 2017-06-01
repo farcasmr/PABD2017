@@ -1,0 +1,22 @@
+Uab\FlorinBundle\Entity\Universitate:
+    type: entity
+    table: null
+    repositoryClass: Uab\FlorinBundle\Repository\UniversitateRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nume:
+            type: string
+            length: 255
+        localitate:
+            type: string
+            length: 255
+    oneToMany:
+        studenti:
+            targetEntity: Student
+            mappedBy: universitate
+    lifecycleCallbacks: {  }

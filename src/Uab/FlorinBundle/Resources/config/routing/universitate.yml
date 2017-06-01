@@ -1,0 +1,24 @@
+universitate_index:
+    path:     /
+    defaults: { _controller: "UabFlorinBundle:Universitate:index" }
+    methods:  GET
+
+universitate_show:
+    path:     /{id}/show
+    defaults: { _controller: "UabFlorinBundle:Universitate:show" }
+    methods:  GET
+
+universitate_new:
+    path:     /new
+    defaults: { _controller: "UabFlorinBundle:Universitate:new" }
+    methods:  [GET, POST]
+
+universitate_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "UabFlorinBundle:Universitate:edit" }
+    methods:  [GET, POST]
+
+universitate_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "UabFlorinBundle:Universitate:delete" }
+    methods:  DELETE
