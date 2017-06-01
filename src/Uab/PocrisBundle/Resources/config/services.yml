@@ -1,0 +1,4 @@
+services:
+#    uab_pocris.example:
+#        class: Uab\PocrisBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
