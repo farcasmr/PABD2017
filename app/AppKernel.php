@@ -21,8 +21,9 @@ class AppKernel extends Kernel
             new Uab\MagerusanBundle\UabMagerusanBundle(),
             new Uab\SolymosiBundle\UabSolymosiBundle(),
           	new Uab\BreazBundle\UabBreazBundle(),
-            
-	    new Uab\PocrisBundle\UabPocrisBundle(),
+            new Uab\IspasBundle\UabIspasBundle(),
+	    new Uab\PocrisBundle\UabPocrisBundle()
+	    
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

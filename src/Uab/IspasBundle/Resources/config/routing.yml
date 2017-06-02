@@ -1,0 +1,3 @@
+uab_andrei_homepage:
+    path: /
+    defaults: { _controller: UabIspasBundle:Default:index }
