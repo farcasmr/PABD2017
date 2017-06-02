@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Universitati</h1>
+
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nume</th>
+                <th>Localitate</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for universitate in universitates %}
+            <tr>
+                <td><a href="{{ path('universitate_show', { 'id': universitate.id }) }}">{{ universitate.id }}</a></td>
+                <td>{{ universitate.nume }}</td>
+                <td>{{ universitate.localitate }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('universitate_show', { 'id': universitate.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('universitate_edit', { 'id': universitate.id }) }}">edit</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('student_index', { 'uniId': universitate.id }) }}">studenti</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('universitate_new') }}">Adauga o universitate</a>
+        </li>
+    </ul>
+{% endblock %}
+{% block javascripts %}
+  <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{ asset('bundles/uabflorin/web/js/florin.js') }}"></script>
+{% endblock %}

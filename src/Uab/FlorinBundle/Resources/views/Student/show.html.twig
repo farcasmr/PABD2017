@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Student</h1>
+
+    <table class="table table-responsive">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ student.id }}</td>
+            </tr>
+            <tr>
+                <th>Nume</th>
+                <td>{{ student.nume }}</td>
+            </tr>
+            <tr>
+                <th>Prenume</th>
+                <td>{{ student.prenume }}</td>
+            </tr>
+            <tr>
+                <th>Data nasterii</th>
+                <td>{% if student.dataNasterii %}{{ student.dataNasterii|date('Y-m-d') }}{% endif %}</td>
+            </tr>
+            <tr>
+                <th>Specializare</th>
+                <td>{{ student.specializare }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="{{ path('student_index', {'uniId': uniId}) }}">
+                <span class="glyphicon glyphicon-step-backward"></span>
+                Inapoi la lista
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="{{ path('student_edit', { 'id': student.id, 'uniId': uniId }) }}">
+                <span class="glyphicon glyphicon-pencil"></span>
+                Edit
+            </a>
+        </li>
+        <li class="list-group-item">
+            {{ form_start(delete_form) }}
+                <button type="submit" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-remove-circle"></span>
+                    <span>Delete</span>
+                </button>
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
+{% block javascripts %}
+  <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{ asset('bundles/uabflorin/web/js/florin.js') }}"></script>
+{% endblock %}

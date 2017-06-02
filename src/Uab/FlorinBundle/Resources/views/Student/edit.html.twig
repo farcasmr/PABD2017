@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Editare student</h1>
+
+    {{ form_start(edit_form) }}
+        {{ form_widget(edit_form) }}
+        <button type="submit" class="btn btn-primary">
+            <span class="glyphicon glyphicon-edit"></span>
+            <span>Edit</span>
+        </button>
+    {{ form_end(edit_form) }}
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="{{ path('student_index', {'uniId': uniId}) }}">
+                <span class="glyphicon glyphicon-step-backward"></span>
+                Inapoi la lista
+            </a>
+        </li>
+        <li class="list-group-item">
+            {{ form_start(delete_form) }}
+                <button type="submit" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-remove-circle"></span>
+                    <span>Delete</span>
+                </button>
+            {{ form_end(delete_form) }}
+        </li>
+    </ul>
+{% endblock %}
+{% block javascripts %}
+  <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{ asset('bundles/uabflorin/web/js/florin.js') }}"></script>
+{% endblock %}
