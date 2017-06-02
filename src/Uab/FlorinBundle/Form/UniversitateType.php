@@ -15,7 +15,7 @@ class UniversitateType extends AbstractType
     {
         $builder->add('nume')->add('localitate')        ;
     }
-    
+
     /**
      * {@inheritdoc}
      */
@@ -34,5 +34,8 @@ class UniversitateType extends AbstractType
         return 'uab_florinbundle_universitate';
     }
 
-
+    public function __toString()
+    {
+        return $this->getNume();
+    }
 }

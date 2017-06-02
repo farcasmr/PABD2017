@@ -1,9 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <h1>Universitates list</h1>
+    <h1>Universitati</h1>
 
-    <table>
+    <table class="table table-responsive table-striped">
         <thead>
             <tr>
                 <th>Id</th>
@@ -26,6 +26,9 @@
                         <li>
                             <a href="{{ path('universitate_edit', { 'id': universitate.id }) }}">edit</a>
                         </li>
+                        <li>
+                            <a href="{{ path('student_index', { 'uniId': universitate.id }) }}">studenti</a>
+                        </li>
                     </ul>
                 </td>
             </tr>
@@ -35,7 +38,12 @@
 
     <ul>
         <li>
-            <a href="{{ path('universitate_new') }}">Create a new universitate</a>
+            <a href="{{ path('universitate_new') }}">Adauga o universitate</a>
         </li>
     </ul>
+{% endblock %}
+{% block javascripts %}
+  <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{ asset('bundles/uabflorin/web/js/florin.js') }}"></script>
 {% endblock %}
