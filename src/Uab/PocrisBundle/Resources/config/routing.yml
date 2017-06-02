@@ -1,0 +1,3 @@
+uab_pocris_homepage:
+    path:     /
+    defaults: { _controller: UabPocrisBundle:Default:index }
