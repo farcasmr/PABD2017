@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('bundles/uabirinca/web/css/andreea.css') }}" />
+{% endblock %}
+{% block body %}
+
+<h1 id="hh">Irinca Andreea</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-3">
+        <img id="selfie" src="/bundles/uabirinca/web/images/andreea_1.jpg">
+      </div>
+      <div class="col-xs-6">
+        <div id="info">
+          <div class="row">
+            <label>Studiez la:</label>
+            <span>Universitatea "1 Decembrie 1918" din Alba Iulia</span>
+          </div>
+          <div class="row">
+            <label>Specializarea:</label>
+            <span>Programare Avansata si Baze de Date</span>
+          </div>
+		  <div class="row">
+            <label>Anul de studiu:</label>
+            <span>2</span>
+          </div>
+		
+			<p id="fb">
+			Daca vrei sa vezi mai multe despre mine, click pe buton: 
+			<a href="https://www.facebook.com/andreea.irinca92">
+			<button id="buton">Spre pagina mea de Facebook.</button>
+			</a>
+			</p>
+			
+        </div>
+      </div>
+    </div></div>
+{% endblock %}
+{% block javascripts %}
+  <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="{{ asset('bundles/uabirinca/web/js/andreea.js') }}"></script>
+{% endblock %}

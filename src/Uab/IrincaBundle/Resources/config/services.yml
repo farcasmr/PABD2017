@@ -1,0 +1,4 @@
+services:
+#    uab_andreea.example:
+#        class: Uab\IrincaBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

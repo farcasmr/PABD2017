@@ -28,6 +28,11 @@ uab_marius:
 uab_solymosi:
     resource: "@UabSolymosiBundle/Resources/config/routing.yml"
     prefix:   /solymosi
+    
 uab_andrei:
     resource: "@UabIspasBundle/Resources/config/routing.yml"
     prefix:   /andrei
+    
+uab_andreea_homepage    :
+    resource: "@UabIrincaBundle/Resources/config/routing.yml"
+    prefix:   /irinca
