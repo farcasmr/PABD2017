@@ -1,3 +1,11 @@
 uab_florin_homepage:
     path: /
     defaults: { _controller: UabFlorinBundle:Default:index }
+
+uab_florin_universitate:
+    resource: "@UabFlorinBundle/Resources/config/routing/universitate.yml"
+    prefix:   /universitate
+
+uab_florin_student:
+    resource: "@UabFlorinBundle/Resources/config/routing/student.yml"
+    prefix:   /universitate/{uniId}/student

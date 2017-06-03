@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Lista studenti</h1>
+
+    <table class="table table-responsive table-striped">
+        <thead>
+            <tr>
+                <th class="text-center">Id</th>
+                <th class="text-center">Nume</th>
+                <th class="text-center">Prenume</th>
+                <th class="text-center">Data nasterii</th>
+                <th class="text-center">Specializare</th>
+                <th class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for student in students %}
+            <tr class="text-center">
+                <td><a href="{{ path('student_show', { 'id': student.id, 'uniId': uniId }) }}">{{ student.id }}</a></td>
+                <td>{{ student.nume }}</td>
+                <td>{{ student.prenume }}</td>
+                <td>{% if student.dataNasterii %}{{ student.dataNasterii|date('Y-m-d') }}{% endif %}</td>
+                <td>{{ student.specializare }}</td>
+                <td>
+                    <a href="{{ path('student_show', { 'id': student.id, 'uniId': uniId }) }}">
+                        <span class="glyphicon glyphicon-eye-open"></span>
+                        Show
+                    </a>
+                    <a href="{{ path('student_edit', { 'id': student.id, 'uniId': uniId }) }}">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                        Edit
+                    </a>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="{{ path('student_new', {uniId: uniId}) }}">
+                <span class="glyphicon glyphicon-plus"></span>
+                Adauga student
+            </a>
+        </li>
+    </ul>
+{% endblock %}
+{% block javascripts %}
+  <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{ asset('bundles/uabflorin/web/js/florin.js') }}"></script>
+{% endblock %}

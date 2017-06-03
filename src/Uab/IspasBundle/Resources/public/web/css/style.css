@@ -1,0 +1,16 @@
+#profil {
+  width: 300px;
+  height: 300px;
+  float: left;
+}
+#h2{
+font-family: "Times New Roman", Times, serif;
+font-size: 40px;
+}
+#info {
+  width: 400px;
+  float: right;
+  color: #2F4F4F;
+  padding: 15px;
+}
+

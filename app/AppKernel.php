@@ -24,6 +24,7 @@ class AppKernel extends Kernel
 	    new Uab\PocrisBundle\UabPocrisBundle(),
 	    new Uab\IspasBundle\UabIspasBundle(),
             new Uab\TecsaBundle\UabTecsaBundle()
+
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {

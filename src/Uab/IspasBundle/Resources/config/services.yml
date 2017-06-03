@@ -1,0 +1,4 @@
+services:
+#    uab_andrei.example:
+#        class: Uab\IspasBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
