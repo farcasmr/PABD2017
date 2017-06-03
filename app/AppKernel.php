@@ -20,10 +20,10 @@ class AppKernel extends Kernel
             new Uab\FlorinBundle\UabFlorinBundle(),
             new Uab\MagerusanBundle\UabMagerusanBundle(),
             new Uab\SolymosiBundle\UabSolymosiBundle(),
-          	new Uab\BreazBundle\UabBreazBundle(),
-            
+            new Uab\BreazBundle\UabBreazBundle(),
 	    new Uab\PocrisBundle\UabPocrisBundle(),
-            new Uab\TecsaBundle\UabTecsaBundle(),
+	    new Uab\IspasBundle\UabIspasBundle(),
+            new Uab\TecsaBundle\UabTecsaBundle()
         ];
 
         if (in_array($this->getEnvironment(), ['dev', 'test'], true)) {
