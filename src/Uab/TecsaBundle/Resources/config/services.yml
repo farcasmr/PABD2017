@@ -1,0 +1,4 @@
+services:
+#    uab_tecsa.example:
+#        class: Uab\TecsaBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]

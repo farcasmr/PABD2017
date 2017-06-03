@@ -1,0 +1,91 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('bundles/uabtecsa/web/css/tecsa.css') }}" />
+{% endblock %}
+
+{% block body %}
+
+<div class="container">
+	<h1 id="name">{{numele}}</h1>
+    <div class="row">
+      <div class="col-xs-4">
+		<div id="carousel-ex" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+    			<li data-target="#carousel-ex" data-slide-to="0" class="active"></li>
+    			<li data-target="#carousel-ex" data-slide-to="1"></li>
+    			<li data-target="#carousel-ex" data-slide-to="2"></li>
+  			</ol>
+ 
+  			<div class="carousel-inner">
+    			<div class="item active">
+    				<img src="/bundles/uabtecsa/web/images/tecsa.jpg" alt="image">
+   	 			</div>
+    			<div class="item">
+    				<img src="/bundles/uabtecsa/web/images/tecsa2.jpg" alt="image">
+    			</div>
+    			<div class="item">
+     				<img src="/bundles/uabtecsa/web/images/tecsa1.jpg" alt="image">
+    			</div>
+  			</div>
+
+  			<a class="left carousel-control" href="#carousel-ex" role="button" data-slide="prev">
+   				 <span class="glyphicon glyphicon-chevron-left"></span>
+  			</a>
+  			<a class="right carousel-control" href="#carousel-ex" role="button" data-slide="next">
+   				 <span class="glyphicon glyphicon-chevron-right"></span>
+ 			 </a>
+		</div> 
+      </div>
+	<div>
+
+    <div id="info">
+        <div class="row">
+            <label>Universitate:</label>
+            <span>{{universitate}}</span>
+        </div>
+
+        <div class="row">
+            <label>Oras:</label>
+            <span>Alba Iulia</span>
+        </div>
+
+        <div class="row">
+            <label>Facultate:</label>
+            <span>{{facultate}}</span>
+        </div>
+
+        <div class="row">
+            <label>Specializare:</label>
+            <span>{{specializare}}</span>
+        </div>
+
+        <div class="row">
+            <label>Varsta:</label>
+            <span>{{varsta}}</span>
+        </div>
+
+        <div class="row">
+            <label>Pasiunile mele:</label>
+            <span>{{pasiuni}}</span>
+        </div>
+
+		<button id="myBtn">Contact:</button>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+  		<!-- Modal content -->
+  		<div class="modal-content">
+   			 <span class="close">&times;</span>
+   			 <p>Poti sa-mi scrii la adresa de email : tecsaroxana@yahoo.com</p>
+  		</div>
+
+</div>
+{% endblock %}
+
+{% block javascripts %}
+  <script src="{{ asset('https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js') }}"></script>
+  <script src="{{ asset('https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js') }}"></script>
+  <script src="{{ asset('bundles/uabtecsa/web/js/tecsa.js') }}"></script>
+{% endblock %}
+
