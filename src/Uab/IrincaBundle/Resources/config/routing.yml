@@ -1,0 +1,3 @@
+uab_andreea_homepage:
+    path: /
+    defaults: { _controller: UabIrincaBundle:Default:index }
