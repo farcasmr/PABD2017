@@ -1,0 +1,3 @@
+uab_tecsa_homepage:
+    path: /
+    defaults: { _controller: UabTecsaBundle:Default:index }
