@@ -1,3 +1,7 @@
+uab_robert:
+    resource: "@UabRobertBundle/Resources/config/routing.yml"
+    prefix:   /robert
+
 uab_tecsa:
     resource: "@UabTecsaBundle/Resources/config/routing.yml"
     prefix:   /tecsa

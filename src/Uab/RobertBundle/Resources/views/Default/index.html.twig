@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{asset('bundles/uabrobert/web/css/robert.css') }}" />
+{% endblock %}
+{% block body %}
+ <br> <h3>{{title}}</h3>
+
+  <div class="container">
+    
+ <div class="row">
+     <div class="col-xs-6">
+        <img src="{{asset('bundles/uabrobert/web/images/rob.jpg')}}" class="img-fluid img-rounded" width="304" height="236" alt="Responsive image">
+      </div>
+   <div class="col-xs-6">
+
+        <div class="info" class="collapse in">
+          <div id="demo" style="display:none">
+            <label>Adresa:</label>
+            <span><br>Sebes Alba 
+                  <br>Str Mircea cel Mare nr 31</span></br>
+            <label>Ocupatie:</label>
+              <span><br>Student
+                    <br>Universitatea 1 Decembrie 1918 Alba Iulia</span>
+                    <br>Programare avansata si baze de date</span></br>
+                    <label>Hobby:</label>
+              <span><br>Pescuit
+                    <br>Inot
+          </div>
+
+           &nbsp
+         
+</div>
+<button type="button" onclick="document.getElementById('demo').style.display='block'">Click Me!</button>
+      </div>
+    </div></div>
+{% endblock %}
+{% block javascripts %}
+  <script src="{{ asset('js/jquery-3.2.1.js') }}"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="{{ asset('bundles/uabrobert/web/js/robert.js') }}"></script>
+{% endblock %}

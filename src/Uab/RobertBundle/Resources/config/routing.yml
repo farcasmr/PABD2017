@@ -1,0 +1,3 @@
+uab_robert_homepage:
+    path: /
+    defaults: { _controller: UabRobertBundle:Default:index }
